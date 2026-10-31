@@ -1,0 +1,9 @@
+# local design/tool files — not part of the published site
+.superdesign/
+.claude/
+.agents/
+skills-lock.json
+
+# local storage emulator junk
+__azurite_db_*.json
+__queuestorage__/

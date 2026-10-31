@@ -1,6 +1,6 @@
 # Taha & Noor — Walima Invitation
 
-A single-page, static Walima invitation site for Syed Muhammad Taha Jilani & Syeda Noor Fatima Gilani — Sunday, 29th November 2026, Shershah Palace, Lahore.
+A single-page, static Walima invitation site for Syed Muhammad Taha Jilani & Syeda Noor Fatima Gillani — Sunday, 29th November 2026, Shershah Palace, Lahore.
 
 No build step required — plain HTML/CSS/JS.
 

@@ -103,7 +103,7 @@ def build_og_image():
     amp_f = font(SERIF_FONT, 30)
     centered_text(draw, cx, 300, "Syed Muhammad Taha Jilani", name_f, IVORY)
     centered_text(draw, cx, 344, "&", amp_f, GOLD_400)
-    centered_text(draw, cx, 382, "Syeda Noor Fatima Gilani", name_f, IVORY)
+    centered_text(draw, cx, 382, "Syeda Noor Fatima Gillani", name_f, IVORY)
 
     draw.line([(cx - 130, 450), (cx - 18, 450)], fill=GOLD_500, width=1)
     draw.line([(cx + 18, 450), (cx + 130, 450)], fill=GOLD_500, width=1)
@@ -113,7 +113,7 @@ def build_og_image():
     centered_text(draw, cx, 470, "SUNDAY, 29TH NOVEMBER 2026 · LAHORE", date_f, GOLD_300 if False else GOLD_400, letter_spacing=2)
 
     venue_f = font(SERIF_FONT, 22)
-    centered_text(draw, cx, 520, "Shershah Palace · 2:00 PM Lunch · 3:00 PM Walima", venue_f, IVORY)
+    centered_text(draw, cx, 520, "Shershah Palace · 2:00 PM Arrival · 3:00 PM Lunch", venue_f, IVORY)
 
     img.save(os.path.join(OUT_DIR, "og-image.png"), "PNG")
     print("Saved og-image.png")

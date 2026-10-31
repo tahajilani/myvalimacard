@@ -2,14 +2,15 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+<meta name="theme-color" content="#f6efe3">
 <title>Taha &amp; Noor — Walima | 29th November 2026</title>
-<meta name="description" content="Join us in celebrating the Walima of Syed Muhammad Taha Jilani &amp; Syeda Noor Fatima Gilani — Sunday, 29th November 2026, Shershah Palace, Lahore.">
+<meta name="description" content="Join us in celebrating the Walima of Syed Muhammad Taha Jilani &amp; Syeda Noor Fatima Gillani — Sunday, 29th November 2026, Shershah Palace, Lahore.">
 
 <!-- Open Graph -->
 <meta property="og:type" content="website">
 <meta property="og:title" content="Taha &amp; Noor — Walima Invitation">
-<meta property="og:description" content="Sunday, 29th November 2026 · Shershah Palace, Lahore. Lunch 2:00 PM · Walima 3:00 PM onwards.">
+<meta property="og:description" content="Sunday, 29th November 2026 · Shershah Palace, Lahore. Arrival 2:00 PM · Lunch 3:00 PM.">
 <meta property="og:image" content="assets/img/og-image.png">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
@@ -22,91 +23,401 @@
 <meta name="twitter:image" content="assets/img/og-image.png">
 
 <link rel="icon" type="image/png" href="assets/img/favicon.png">
-<link rel="apple-touch-icon" href="assets/img/favicon.png">
+<link rel="apple-touch-icon" href="assets/img/apple-touch-icon.png">
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,500&family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Amiri:wght@400;700&family=Great+Vibes&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,500&family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400&display=swap" rel="stylesheet">
 
 <link rel="stylesheet" href="assets/css/style.css">
+
+<!-- Enable the card-opening intro only when JS runs and motion is welcome -->
+<script>
+  (function (d) {
+    var reduce = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+    d.classList.add('js');
+    if (!reduce) d.classList.add('intro-on');
+  })(document.documentElement);
+</script>
 </head>
 <body>
 
-<!-- decorative fixed background pattern -->
-<div class="bg-pattern" aria-hidden="true"></div>
+<!-- Shared floral ornaments -->
+<svg class="svg-defs" aria-hidden="true" focusable="false">
+  <!-- open garden rose, top view: three rings of layered petals around a cupped, spiralled heart -->
+  <symbol id="rose" viewBox="-12.5 -12.5 25 25">
+    <defs>
+      <path id="rose-petal-outer" d="M0,-1 C-5,-3.5 -7.2,-9 -3.8,-11.4 C-2.2,-12.4 -0.8,-11.6 0,-10.6 C0.8,-11.6 2.2,-12.4 3.8,-11.4 C7.2,-9 5,-3.5 0,-1Z"/>
+      <path id="rose-petal-mid" d="M0,-0.5 C-4,-2.4 -5.4,-6.6 -2.8,-8.3 C-1.4,-9.1 -0.4,-8.5 0,-7.9 C0.4,-8.5 1.4,-9.1 2.8,-8.3 C5.4,-6.6 4,-2.4 0,-0.5Z"/>
+      <path id="rose-vein" d="M0,-2.8 C-0.6,-5.4 -0.4,-8 0,-9.6 M-1.6,-4.2 C-2.6,-6.2 -2.8,-7.8 -2.4,-9 M1.6,-4.2 C2.6,-6.2 2.8,-7.8 2.4,-9"/>
+    </defs>
+    <!-- outer ring -->
+    <g style="fill:var(--rose-300)" stroke="currentColor" stroke-width=".45" stroke-linejoin="round">
+      <use href="#rose-petal-outer"/>
+      <use href="#rose-petal-outer" transform="rotate(72)"/>
+      <use href="#rose-petal-outer" transform="rotate(144)"/>
+      <use href="#rose-petal-outer" transform="rotate(216)"/>
+      <use href="#rose-petal-outer" transform="rotate(288)"/>
+    </g>
+    <g fill="none" style="stroke:var(--rose-500)" stroke-width=".3" stroke-opacity=".45" stroke-linecap="round">
+      <use href="#rose-vein"/>
+      <use href="#rose-vein" transform="rotate(72)"/>
+      <use href="#rose-vein" transform="rotate(144)"/>
+      <use href="#rose-vein" transform="rotate(216)"/>
+      <use href="#rose-vein" transform="rotate(288)"/>
+    </g>
+    <!-- middle ring, offset between the outer petals -->
+    <g style="fill:var(--rose-400); stroke:var(--rose-500)" stroke-width=".4" stroke-linejoin="round">
+      <use href="#rose-petal-mid" transform="rotate(36)"/>
+      <use href="#rose-petal-mid" transform="rotate(108)"/>
+      <use href="#rose-petal-mid" transform="rotate(180)"/>
+      <use href="#rose-petal-mid" transform="rotate(252)"/>
+      <use href="#rose-petal-mid" transform="rotate(324)"/>
+    </g>
+    <!-- cupped heart with wrapping petals and spiral -->
+    <circle r="4.6" style="fill:var(--rose-500); fill-opacity:.85"/>
+    <path d="M-4.4,0.8 C-4.2,-3.6 3.8,-4.6 4.5,-0.2 C2.6,-2.2 -1.8,-2.2 -4.4,0.8Z" style="fill:var(--rose-300); stroke:var(--rose-500)" stroke-width=".35"/>
+    <path d="M-3.9,1.4 C-2.4,4.4 2.6,4.4 4,1 C2.2,2.6 -1.8,2.8 -3.9,1.4Z" style="fill:var(--rose-400); stroke:var(--rose-500)" stroke-width=".35"/>
+    <path d="M-2.2,-0.6 C-1.6,-2.2 1.8,-2.2 2.2,0.2 C1.2,-0.8 -1,-1 -2.2,-0.6Z" style="fill:var(--rose-300)"/>
+    <path d="M0.3,-0.3 C1.3,-0.1 1.1,1.1 0,1.1 C-1.3,1.1 -1.5,-0.7 -0.2,-1.4 C1.5,-2.1 2.8,-0.5 2.1,1.1" fill="none" style="stroke:var(--rose-500)" stroke-width=".45" stroke-linecap="round"/>
+  </symbol>
 
-<nav class="site-nav" id="siteNav" aria-label="Section navigation">
-  <div class="nav-inner">
-    <a href="#home" class="nav-monogram">T&nbsp;&amp;&nbsp;N</a>
-    <ul class="nav-links">
-      <li><a href="#home" class="nav-link active" data-section="home">Home</a></li>
-      <li><a href="#details" class="nav-link" data-section="details">Details</a></li>
-      <li><a href="#venue" class="nav-link" data-section="venue">Venue</a></li>
-    </ul>
+  <!-- veined leaf pointing right -->
+  <symbol id="leaf" viewBox="0 -6 22 12">
+    <path d="M0,0 C5,-5.5 15,-5.5 22,0 C15,5.5 5,5.5 0,0Z" style="fill:var(--leaf); fill-opacity:.55" stroke="currentColor" stroke-width=".7"/>
+    <path d="M1,0 C8,-0.4 14,-0.3 20,0 M5,-0.2 L8,-2.6 M9.5,-0.3 L12.6,-3 M14,-0.2 L16.8,-2.4 M6.5,0.1 L9.2,2.6 M11,0.2 L14,2.8 M15.4,0.1 L17.8,2" fill="none" stroke="currentColor" stroke-width=".4" stroke-opacity=".75" stroke-linecap="round"/>
+  </symbol>
+
+  <!-- rosebud pointing up: wrapped petals cupped by green sepals -->
+  <symbol id="bud" viewBox="-6.5 -12 13 19">
+    <path d="M0,-11.2 C4.6,-8.4 5.2,-2.4 0,1.6 C-5.2,-2.4 -4.6,-8.4 0,-11.2Z" style="fill:var(--rose-400); stroke:var(--rose-500)" stroke-width=".45"/>
+    <path d="M-2.6,-8.4 C-0.2,-10.6 3.2,-9.2 3.4,-5 C2.2,-7.2 -0.4,-8 -2.6,-8.4Z" style="fill:var(--rose-300)"/>
+    <path d="M-4.2,-3.4 C-3.2,-6.4 1.2,-7.2 4,-4.2 C1.2,-5.2 -2,-4.8 -4.2,-3.4Z" style="fill:var(--rose-300); stroke:var(--rose-500)" stroke-width=".35"/>
+    <g style="fill:var(--leaf)" stroke="currentColor" stroke-width=".45" stroke-linejoin="round">
+      <path d="M0,2.2 C-3.2,0.6 -5.4,-2.4 -6,-5.6 C-3.6,-3.6 -1.8,-1.6 0,-0.6Z"/>
+      <path d="M0,2.2 C3.2,0.6 5.4,-2.4 6,-5.6 C3.6,-3.6 1.8,-1.6 0,-0.6Z"/>
+      <path d="M0,2.4 C-1.2,0.4 -1,-2.6 0,-4.2 C1,-2.6 1.2,0.4 0,2.4Z" fill-opacity=".8"/>
+    </g>
+    <path d="M0,2.4 L0,7" fill="none" stroke="currentColor" stroke-width=".7" stroke-linecap="round"/>
+  </symbol>
+
+  <!-- Mughal lotus bouquet (gul-dasta) -->
+  <symbol id="gul" viewBox="-60 -60 120 120">
+    <g fill="none" stroke="currentColor" stroke-width="1.1" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M0,-8 C0,10 0,30 0,54"/>
+      <g id="gul-half">
+        <path d="M0,22 C10,10 26,6 40,6 C32,18 16,26 0,22Z" style="fill:var(--leaf); fill-opacity:.4"/>
+        <path d="M3,21 C14,14 26,10 37,7"/>
+        <path d="M0,8 C14,4 26,-4 34,-18"/>
+        <path d="M34,-18 C30,-24 31,-32 36,-37 C41,-32 41,-24 34,-18Z" style="fill:var(--rose-400); fill-opacity:.6"/>
+        <path d="M20,2 C24,-6 30,-8 35,-6 C30,0 25,2 20,2Z" style="fill:var(--leaf); fill-opacity:.4"/>
+        <path d="M0,36 C12,36 24,40 30,47"/>
+        <circle cx="30" cy="44" r="2.6"/><circle cx="34" cy="47" r="2.6"/><circle cx="32.6" cy="51.5" r="2.6"/><circle cx="27.4" cy="51.5" r="2.6"/><circle cx="26" cy="47" r="2.6"/>
+        <circle cx="30" cy="48.2" r="1.2" style="fill:currentColor"/>
+        <path d="M0,-10 C10,-12 26,-22 30,-32 C18,-32 6,-24 0,-10Z" style="fill:var(--rose-400); fill-opacity:.45"/>
+        <path d="M0,-10 C8,-16 18,-34 14,-46 C6,-40 2,-26 0,-10Z" style="fill:var(--rose-300); fill-opacity:.45"/>
+      </g>
+      <use href="#gul-half" transform="scale(-1,1)"/>
+      <path d="M0,-10 C7,-20 7,-38 0,-52 C-7,-38 -7,-20 0,-10Z" style="fill:var(--rose-300); fill-opacity:.55"/>
+      <path d="M-12,-8 C-6,-2 6,-2 12,-8 C6,-6 -6,-6 -12,-8Z" style="fill:currentColor; fill-opacity:.5"/>
+      <circle cx="0" cy="-56" r="1.6" style="fill:currentColor"/>
+    </g>
+  </symbol>
+
+
+  <!-- floral spray growing diagonally out of a corner -->
+  <symbol id="spray" viewBox="0 0 140 140">
+    <g fill="none" stroke="currentColor" stroke-width="1" stroke-linecap="round">
+      <path d="M4,4 C28,22 46,42 66,66"/>
+      <g id="spray-half">
+        <path d="M24,18 C46,12 70,16 96,14"/>
+        <path d="M46,42 C66,38 84,42 104,52"/>
+        <path d="M70,15 C80,6 92,4 104,6"/>
+        <use href="#leaf" x="0" y="-6" width="22" height="12" transform="translate(36,15) rotate(-12)"/>
+        <use href="#leaf" x="0" y="-6" width="22" height="12" transform="translate(58,15) rotate(10) scale(.9)"/>
+        <use href="#leaf" x="0" y="-6" width="22" height="12" transform="translate(60,40) rotate(-14)"/>
+        <use href="#leaf" x="0" y="-6" width="22" height="12" transform="translate(80,44) rotate(18) scale(.85)"/>
+        <use href="#rose" x="-12" y="-12" width="24" height="24" transform="translate(100,15) scale(.95)"/>
+        <use href="#rose" x="-12" y="-12" width="24" height="24" transform="translate(108,54) scale(.7)"/>
+        <use href="#bud" x="-6" y="-12" width="12" height="18" transform="translate(108,6) rotate(70) scale(.85)"/>
+        <circle cx="124" cy="22" r="1.4" style="fill:currentColor"/><circle cx="120" cy="30" r="1" style="fill:currentColor"/>
+      </g>
+      <use href="#spray-half" transform="matrix(0 1 1 0 0 0)"/>
+      <use href="#rose" x="-12" y="-12" width="24" height="24" transform="translate(74,74) scale(1.45)"/>
+      <use href="#bud" x="-6" y="-12" width="12" height="18" transform="translate(98,98) rotate(135) scale(.9)"/>
+    </g>
+  </symbol>
+
+  <!-- white jasmine (motia) blossom -->
+  <symbol id="jasmine" viewBox="-6 -6 12 12">
+    <defs>
+      <path id="jasmine-petal" d="M0,-0.4 C-1.7,-1.6 -1.6,-4.6 0,-5.7 C1.6,-4.6 1.7,-1.6 0,-0.4Z"/>
+    </defs>
+    <g style="fill:#fffaf0" stroke="currentColor" stroke-width=".35" stroke-linejoin="round">
+      <use href="#jasmine-petal"/>
+      <use href="#jasmine-petal" transform="rotate(72)"/>
+      <use href="#jasmine-petal" transform="rotate(144)"/>
+      <use href="#jasmine-petal" transform="rotate(216)"/>
+      <use href="#jasmine-petal" transform="rotate(288)"/>
+    </g>
+    <circle r="1" style="fill:var(--gold-400)"/>
+  </symbol>
+
+  <!-- lush bouquet cluster growing out of a corner: fanned leaves, filler sprigs, jasmine, massed roses, buds -->
+  <symbol id="cluster" viewBox="0 0 170 170">
+    <g fill="none" stroke="currentColor" stroke-width="1" stroke-linecap="round">
+      <!-- diagonal back leaves and filler -->
+      <use href="#leaf" x="0" y="-6" width="22" height="12" transform="translate(80,80) rotate(45) scale(1.7)"/>
+      <use href="#leaf" x="0" y="-6" width="22" height="12" transform="translate(70,88) rotate(70) scale(1.25)"/>
+      <use href="#leaf" x="0" y="-6" width="22" height="12" transform="translate(88,70) rotate(20) scale(1.25)"/>
+      <path d="M62,62 C80,84 96,98 116,112 M98,100 L106,96 M106,106 L114,104 M104,92 C108,88 112,88 116,90" stroke-width=".7"/>
+      <g id="cluster-half">
+        <!-- trailing sprig along the edge -->
+        <path d="M30,22 C64,18 104,20 150,14" stroke-width=".9"/>
+        <use href="#leaf" x="0" y="-6" width="22" height="12" transform="translate(100,20) rotate(-14) scale(1.15)"/>
+        <use href="#leaf" x="0" y="-6" width="22" height="12" transform="translate(118,18) rotate(16) scale(.95)"/>
+        <use href="#leaf" x="0" y="-6" width="22" height="12" transform="translate(132,16) rotate(-18) scale(.8)"/>
+        <!-- fanned leaves behind the roses -->
+        <use href="#leaf" x="0" y="-6" width="22" height="12" transform="translate(70,40) rotate(-12) scale(1.7)"/>
+        <use href="#leaf" x="0" y="-6" width="22" height="12" transform="translate(80,58) rotate(18) scale(1.55)"/>
+        <use href="#leaf" x="0" y="-6" width="22" height="12" transform="translate(92,38) rotate(-30) scale(1.2)"/>
+        <!-- baby's-breath filler sprig -->
+        <path d="M70,46 C90,48 104,52 118,62 M104,53 L108,46 M112,58 L118,52" stroke-width=".7"/>
+        <g style="fill:#fffaf0" stroke-width=".35">
+          <circle cx="118" cy="62" r="1.6"/><circle cx="121" cy="59" r="1.2"/><circle cx="115" cy="65" r="1.1"/>
+          <circle cx="108" cy="46" r="1.4"/><circle cx="110.5" cy="43.5" r="1"/><circle cx="105.5" cy="44" r="1"/>
+          <circle cx="118" cy="52" r="1.3"/><circle cx="120.5" cy="49.5" r="1"/>
+        </g>
+        <!-- jasmine scattered through the cluster -->
+        <use href="#jasmine" x="-6" y="-6" width="12" height="12" transform="translate(98,30) scale(1.15)"/>
+        <use href="#jasmine" x="-6" y="-6" width="12" height="12" transform="translate(112,34) rotate(20) scale(.85)"/>
+        <use href="#jasmine" x="-6" y="-6" width="12" height="12" transform="translate(66,26) rotate(40) scale(.9)"/>
+        <use href="#jasmine" x="-6" y="-6" width="12" height="12" transform="translate(128,26) rotate(10) scale(.8)"/>
+        <use href="#jasmine" x="-6" y="-6" width="12" height="12" transform="translate(92,54) rotate(25) scale(.9)"/>
+        <use href="#jasmine" x="-6" y="-6" width="12" height="12" transform="translate(140,20) scale(.65)"/>
+        <!-- roses: a second, smaller row tucked behind the main blooms -->
+        <use href="#rose" x="-12.5" y="-12.5" width="25" height="25" transform="translate(66,18) rotate(25) scale(.85)"/>
+        <use href="#rose" x="-12.5" y="-12.5" width="25" height="25" transform="translate(112,48) rotate(-15) scale(.78)"/>
+        <use href="#rose" x="-12.5" y="-12.5" width="25" height="25" transform="translate(134,30) rotate(40) scale(.55)"/>
+        <use href="#rose" x="-12.5" y="-12.5" width="25" height="25" transform="translate(80,54) rotate(10) scale(.7)"/>
+        <!-- main roses -->
+        <use href="#rose" x="-12.5" y="-12.5" width="25" height="25" transform="translate(86,36) scale(1.35)"/>
+        <use href="#rose" x="-12.5" y="-12.5" width="25" height="25" transform="translate(98,66) rotate(30) scale(.95)"/>
+        <use href="#rose" x="-12.5" y="-12.5" width="25" height="25" transform="translate(120,26) rotate(-20) scale(.72)"/>
+        <!-- buds at the tips -->
+        <use href="#bud" x="-6.5" y="-12" width="13" height="19" transform="translate(146,16) rotate(80) scale(.85)"/>
+        <use href="#bud" x="-6.5" y="-12" width="13" height="19" transform="translate(132,40) rotate(110) scale(.75)"/>
+      </g>
+      <use href="#cluster-half" transform="matrix(0 1 1 0 0 0)"/>
+      <!-- heart of the bouquet -->
+      <use href="#jasmine" x="-6" y="-6" width="12" height="12" transform="translate(74,74) scale(1.2)"/>
+      <use href="#rose" x="-12.5" y="-12.5" width="25" height="25" transform="translate(98,98) rotate(40) scale(.75)"/>
+      <use href="#rose" x="-12.5" y="-12.5" width="25" height="25" transform="translate(80,80) rotate(15) scale(1.05)"/>
+      <use href="#rose" x="-12.5" y="-12.5" width="25" height="25" transform="translate(52,52) scale(2.05)"/>
+      <use href="#bud" x="-6.5" y="-12" width="13" height="19" transform="translate(112,112) rotate(135) scale(.9)"/>
+      <circle cx="118" cy="104" r="1.3" style="fill:#fffaf0" stroke-width=".35"/><circle cx="104" cy="118" r="1.3" style="fill:#fffaf0" stroke-width=".35"/>
+    </g>
+  </symbol>
+
+  <!-- frame corner: bouquet cluster, with a rose where the borders meet -->
+  <symbol id="corner" viewBox="0 0 160 160">
+    <use href="#cluster" x="6" y="6" width="154" height="154"/>
+    <use href="#leaf" x="0" y="-6" width="22" height="12" transform="translate(14,14) rotate(-20) scale(1.1)" style="color:var(--gold-500)"/>
+    <use href="#leaf" x="0" y="-6" width="22" height="12" transform="translate(14,14) rotate(110) scale(1.1)" style="color:var(--gold-500)"/>
+    <use href="#rose" x="-12.5" y="-12.5" width="25" height="25" transform="translate(12,12) scale(1.05)" style="color:var(--gold-500)"/>
+  </symbol>
+
+  <!-- one swag of the rose toran (garland) -->
+  <pattern id="toran" width="120" height="70" patternUnits="userSpaceOnUse">
+    <g fill="none" stroke-width="1" stroke-linecap="round" style="stroke:var(--gold-500); color:var(--gold-500)">
+      <path d="M0,4 Q60,48 120,4"/>
+      <path d="M0,8 Q60,40 120,8" stroke-opacity=".45"/>
+      <use href="#leaf" x="0" y="-6" width="22" height="12" transform="translate(28,17) rotate(20) scale(.8)"/>
+      <use href="#leaf" x="0" y="-6" width="22" height="12" transform="translate(92,17) rotate(160) scale(.8)"/>
+      <use href="#jasmine" x="-6" y="-6" width="12" height="12" transform="translate(44,23) scale(.75)"/>
+      <use href="#jasmine" x="-6" y="-6" width="12" height="12" transform="translate(76,23) rotate(30) scale(.75)"/>
+      <use href="#rose" x="-12" y="-12" width="24" height="24" transform="translate(60,26) scale(.85)"/>
+      <use href="#rose" x="-12" y="-12" width="24" height="24" transform="translate(30,16) scale(.5)"/>
+      <use href="#rose" x="-12" y="-12" width="24" height="24" transform="translate(90,16) scale(.5)"/>
+      <path d="M60,36 L60,52"/>
+      <use href="#bud" x="-6" y="-12" width="12" height="18" transform="translate(60,62) rotate(180) scale(.85)"/>
+      <use href="#rose" x="-12" y="-12" width="24" height="24" transform="translate(0,4) scale(.55)"/>
+      <use href="#rose" x="-12" y="-12" width="24" height="24" transform="translate(120,4) scale(.55)"/>
+    </g>
+  </pattern>
+
+  <!-- trailing side vine (vertical tile) -->
+  <pattern id="vine" width="44" height="96" patternUnits="userSpaceOnUse">
+    <g fill="none" stroke-width="1" stroke-linecap="round" style="stroke:var(--gold-500); color:var(--gold-500)">
+      <path d="M22,0 C34,24 34,24 22,48 C10,72 10,72 22,96"/>
+      <use href="#leaf" x="0" y="-6" width="22" height="12" transform="translate(31,20) rotate(-50) scale(.75)"/>
+      <use href="#leaf" x="0" y="-6" width="22" height="12" transform="translate(13,68) rotate(230) scale(.75)"/>
+      <use href="#rose" x="-12" y="-12" width="24" height="24" transform="translate(12,24) scale(.45)"/>
+      <use href="#bud" x="-6" y="-12" width="12" height="18" transform="translate(33,72) rotate(30) scale(.7)"/>
+    </g>
+  </pattern>
+</svg>
+
+<!-- ============ INTRO: gatefold card that opens onto the invitation ============ -->
+<div class="intro" id="intro">
+  <div class="door door-left" aria-hidden="true"></div>
+  <div class="door door-right" aria-hidden="true"></div>
+
+  <div class="intro-card">
+    <svg class="medallion" viewBox="0 0 260 260" aria-hidden="true">
+      <defs>
+        <linearGradient id="coupleGold" x1="0" y1="0" x2="0.4" y2="1">
+          <stop offset="0" style="stop-color:#fff1cc"/>
+          <stop offset="0.45" style="stop-color:var(--gold-400)"/>
+          <stop offset="1" style="stop-color:var(--gold-500)"/>
+        </linearGradient>
+        <clipPath id="medallionClip"><circle cx="130" cy="130" r="113"/></clipPath>
+      </defs>
+
+      <!-- medallion rings -->
+      <circle class="ring" cx="130" cy="130" r="122" pathLength="1"/>
+      <circle class="ring ring-inner" cx="130" cy="130" r="116" pathLength="1"/>
+      <circle cx="130" cy="130" r="113" style="fill:var(--sage-900); fill-opacity:.92"/>
+
+      <!-- bride and groom -->
+      <g class="couple" clip-path="url(#medallionClip)" transform="translate(23 30) scale(.8)">
+        <!-- groom: tailored suit, shirt and tie, boutonniere -->
+        <g class="groom">
+          <circle class="draw" pathLength="1" cx="92" cy="52" r="11"/>
+          <path class="draw" pathLength="1" d="M80.6,50 C79.6,40 86,35.5 93,36 C100,36.4 104.6,41 103.6,50 C102,45.6 98,43 92,43.4 C87,43.8 82.6,46 80.6,50Z"/>
+          <path class="draw" pathLength="1" d="M88,61 L96,61 L96,66 L88,66Z"/>
+          <path class="draw" pathLength="1" d="M74,130 L110,130 L108.5,236 L95.5,236 L92,152 L88.5,236 L75.5,236Z"/>
+          <path class="draw" pathLength="1" d="M75,236 C70.5,242.5 88.6,243.6 89.4,238.4 L88.8,236Z M95.2,236 L94.6,238.4 C95.4,243.6 113.5,242.5 109,236Z"/>
+          <path class="draw" pathLength="1" d="M84,64 L100,64 C107,65.5 111,70 111.6,78 L113,132 C106,134.6 99,135.4 92,135.4 C85,135.4 78,134.6 71,132 L72.4,78 C73,70 77,65.5 84,64Z"/>
+          <path class="draw" pathLength="1" d="M72.6,78 C67.6,96 66.8,114 67.6,132 L73.6,132.6 C73.8,116 75,99 77.6,86Z"/>
+          <path class="draw" pathLength="1" d="M108,74 C116,90 122,104 128,116 L134,118 C130,106 122,90 114,74Z"/>
+          <path class="shirt" d="M86.6,64.4 L92,90 L97.4,64.4Z"/>
+          <path class="tie" d="M90.8,66 L93.2,66 L94.2,70 L93.4,84 L92,87.6 L90.6,84 L89.8,70Z"/>
+          <path class="detail" d="M86,64.4 L80.4,80 L86.4,82.4 L92,104 L97.6,82.4 L103.6,80 L98,64.4 M92,135 L92,150 M74.4,133 L74.6,180 M109.6,133 L109.4,180"/>
+          <circle class="detail-dot" cx="92" cy="110" r="1.3"/>
+          <circle class="detail-dot" cx="92" cy="120" r="1.3"/>
+          <path class="pocket" d="M100.6,86.6 L106.4,86.6 L105.4,83 L103.6,85 L102.2,83.2Z"/>
+          <use class="boutonniere" href="#rose" x="-12.5" y="-12.5" width="25" height="25" transform="translate(81 78) scale(.32)" style="color:var(--gold-500)"/>
+        </g>
+        <!-- bride: dupatta, choli, lehenga -->
+        <g class="bride" transform="translate(6 0)">
+          <path class="draw dupatta" pathLength="1" d="M136,56 C134,38 160,34 162,52 C168,70 176,110 186,150 C192,180 198,210 206,240 L186,240 C180,200 170,160 162,120Z"/>
+          <circle class="draw" pathLength="1" cx="148" cy="58" r="10.5"/>
+          <path class="draw" pathLength="1" d="M141,68 L155,68 C161,70 166,74 166,82 L166,110 L132,110 L132,82 C132,74 136,70 141,68Z"/>
+          <path class="draw" pathLength="1" d="M134,84 C130,96 128,108 128,118 L134,119 C134,108 137,96 140,88Z"/>
+          <path class="draw" pathLength="1" d="M132,108 C124,140 112,190 104,240 L196,240 C190,190 176,140 166,108Z"/>
+          <path class="detail" d="M110,224 Q150,232 192,224 M114,214 Q150,221 189,214 M132,110 L166,110"/>
+          <circle class="tikka" cx="143" cy="49" r="1.8"/>
+        </g>
+      </g>
+
+      <!-- rose garland along the lower rim, lotus at the top -->
+      <g class="medallion-flowers" style="color:var(--gold-400)">
+        <use href="#gul" x="112" y="-14" width="36" height="36"/>
+        <use href="#leaf" x="0" y="-6" width="22" height="12" transform="translate(94 238) rotate(200)"/>
+        <use href="#leaf" x="0" y="-6" width="22" height="12" transform="translate(166 238) rotate(-20)"/>
+        <use href="#leaf" x="0" y="-6" width="22" height="12" transform="translate(52 214) rotate(230)"/>
+        <use href="#leaf" x="0" y="-6" width="22" height="12" transform="translate(208 214) rotate(-50)"/>
+        <use href="#rose" x="-12" y="-12" width="24" height="24" transform="translate(130 250) scale(1.05)"/>
+        <use href="#rose" x="-12" y="-12" width="24" height="24" transform="translate(98 245) scale(.75)"/>
+        <use href="#rose" x="-12" y="-12" width="24" height="24" transform="translate(162 245) scale(.75)"/>
+        <use href="#rose" x="-12" y="-12" width="24" height="24" transform="translate(70 230) scale(.6)"/>
+        <use href="#rose" x="-12" y="-12" width="24" height="24" transform="translate(190 230) scale(.6)"/>
+        <use href="#bud" x="-6" y="-12" width="12" height="18" transform="translate(40 206) rotate(-60) scale(.8)"/>
+        <use href="#bud" x="-6" y="-12" width="12" height="18" transform="translate(220 206) rotate(60) scale(.8)"/>
+      </g>
+    </svg>
+
+    <p class="intro-names">Taha <span>&amp;</span> Noor</p>
+    <p class="intro-sub">Walima &middot; 29 &middot; 11 &middot; 2026</p>
+    <button type="button" class="intro-open" id="introOpen">Open invitation</button>
   </div>
-</nav>
+</div>
 
 <main>
 
   <!-- ============ HERO ============ -->
   <section id="home" class="section hero">
     <div class="light-rays" aria-hidden="true"></div>
-    <div class="ornament corner corner-tl" aria-hidden="true"><svg class="corner-svg" viewBox="0 0 120 120" aria-hidden="true"><g fill="none" stroke="currentColor" stroke-width="1.4"><path d="M4,4 C4,42 20,62 60,62"/><path d="M4,4 C42,4 62,20 62,60"/><path d="M11,11 Q32,15 36,36 Q40,57 60,60" opacity="0.8"/><path d="M18,18 C25,13 32,16 31,23 C30,29 21,31 17,25 C15,22 16,19 18,18 Z" fill="currentColor" stroke="none" opacity="0.9"/><path d="M36,10 C43,7 48,11 46,17 C44,23 36,21 34,16 C33,13 34,11 36,10 Z" fill="currentColor" stroke="none" opacity="0.75"/><path d="M52,46 C61,39 64,50 57,57 C50,64 43,57 46,50 C47,47 49,45 52,46 Z" fill="currentColor" stroke="none" opacity="0.85"/><circle cx="8" cy="8" r="2.2" fill="currentColor" stroke="none"/><circle cx="60" cy="60" r="1.6" fill="currentColor" stroke="none"/></g></svg></div>
-    <div class="ornament corner corner-tr" aria-hidden="true"><svg class="corner-svg" viewBox="0 0 120 120" aria-hidden="true"><g fill="none" stroke="currentColor" stroke-width="1.4"><path d="M4,4 C4,42 20,62 60,62"/><path d="M4,4 C42,4 62,20 62,60"/><path d="M11,11 Q32,15 36,36 Q40,57 60,60" opacity="0.8"/><path d="M18,18 C25,13 32,16 31,23 C30,29 21,31 17,25 C15,22 16,19 18,18 Z" fill="currentColor" stroke="none" opacity="0.9"/><path d="M36,10 C43,7 48,11 46,17 C44,23 36,21 34,16 C33,13 34,11 36,10 Z" fill="currentColor" stroke="none" opacity="0.75"/><path d="M52,46 C61,39 64,50 57,57 C50,64 43,57 46,50 C47,47 49,45 52,46 Z" fill="currentColor" stroke="none" opacity="0.85"/><circle cx="8" cy="8" r="2.2" fill="currentColor" stroke="none"/><circle cx="60" cy="60" r="1.6" fill="currentColor" stroke="none"/></g></svg></div>
-    <div class="ornament corner corner-bl" aria-hidden="true"><svg class="corner-svg" viewBox="0 0 120 120" aria-hidden="true"><g fill="none" stroke="currentColor" stroke-width="1.4"><path d="M4,4 C4,42 20,62 60,62"/><path d="M4,4 C42,4 62,20 62,60"/><path d="M11,11 Q32,15 36,36 Q40,57 60,60" opacity="0.8"/><path d="M18,18 C25,13 32,16 31,23 C30,29 21,31 17,25 C15,22 16,19 18,18 Z" fill="currentColor" stroke="none" opacity="0.9"/><path d="M36,10 C43,7 48,11 46,17 C44,23 36,21 34,16 C33,13 34,11 36,10 Z" fill="currentColor" stroke="none" opacity="0.75"/><path d="M52,46 C61,39 64,50 57,57 C50,64 43,57 46,50 C47,47 49,45 52,46 Z" fill="currentColor" stroke="none" opacity="0.85"/><circle cx="8" cy="8" r="2.2" fill="currentColor" stroke="none"/><circle cx="60" cy="60" r="1.6" fill="currentColor" stroke="none"/></g></svg></div>
-    <div class="ornament corner corner-br" aria-hidden="true"><svg class="corner-svg" viewBox="0 0 120 120" aria-hidden="true"><g fill="none" stroke="currentColor" stroke-width="1.4"><path d="M4,4 C4,42 20,62 60,62"/><path d="M4,4 C42,4 62,20 62,60"/><path d="M11,11 Q32,15 36,36 Q40,57 60,60" opacity="0.8"/><path d="M18,18 C25,13 32,16 31,23 C30,29 21,31 17,25 C15,22 16,19 18,18 Z" fill="currentColor" stroke="none" opacity="0.9"/><path d="M36,10 C43,7 48,11 46,17 C44,23 36,21 34,16 C33,13 34,11 36,10 Z" fill="currentColor" stroke="none" opacity="0.75"/><path d="M52,46 C61,39 64,50 57,57 C50,64 43,57 46,50 C47,47 49,45 52,46 Z" fill="currentColor" stroke="none" opacity="0.85"/><circle cx="8" cy="8" r="2.2" fill="currentColor" stroke="none"/><circle cx="60" cy="60" r="1.6" fill="currentColor" stroke="none"/></g></svg></div>
 
-    <div class="hero-content reveal">
-      <p class="eyebrow">Mr &amp; Mrs Syed Rashed Jilani</p>
-      <p class="hero-line">invite you to the</p>
-      <h2 class="script-title">Walima</h2>
-      <p class="hero-line">of their beloved son</p>
-      <div class="names names-stacked">
-        <span class="name">Syed Muhammad Taha Jilani</span>
-        <span class="amp">with</span>
-        <span class="name">Syeda Noor Fatima Gilani</span>
-      </div>
-      <p class="hero-line hero-line-parents">daughter of Mr &amp; Mrs Syed Naveed Gilani</p>
-      <div class="divider" aria-hidden="true"><svg class="divider-svg" viewBox="0 0 300 20" aria-hidden="true"><g fill="none" stroke="currentColor" stroke-width="1.1"><line x1="0" y1="10" x2="123" y2="10"/><line x1="177" y1="10" x2="300" y2="10"/><circle cx="133" cy="10" r="2" fill="currentColor" stroke="none"/><circle cx="167" cy="10" r="2" fill="currentColor" stroke="none"/><path d="M150,2 L158,10 L150,18 L142,10 Z" fill="currentColor" stroke="none"/></g></svg></div>
-      <p class="hero-date">Sunday &middot; 29<sup>th</sup> November 2026 &middot; Lahore</p>
+    <!-- gul-pashi: rose and gold petals drifting down -->
+    <div class="petals" aria-hidden="true">
+      <span style="left:4%;  animation-duration:13s, 5s; animation-delay:0s, 0s;"></span>
+      <span style="left:11%; animation-duration:16s, 6s; animation-delay:6s, 1s;"></span>
+      <span style="left:18%; animation-duration:12s, 4s; animation-delay:3s, 2s;"></span>
+      <span style="left:26%; animation-duration:15s, 7s; animation-delay:9s, 0s;"></span>
+      <span style="left:33%; animation-duration:14s, 5s; animation-delay:1s, 3s;"></span>
+      <span style="left:41%; animation-duration:17s, 6s; animation-delay:7s, 1s;"></span>
+      <span style="left:49%; animation-duration:13s, 4s; animation-delay:11s, 2s;"></span>
+      <span style="left:57%; animation-duration:15s, 6s; animation-delay:4s, 0s;"></span>
+      <span style="left:64%; animation-duration:12s, 5s; animation-delay:8s, 2s;"></span>
+      <span style="left:72%; animation-duration:16s, 7s; animation-delay:2s, 1s;"></span>
+      <span style="left:79%; animation-duration:14s, 4s; animation-delay:10s, 3s;"></span>
+      <span style="left:86%; animation-duration:13s, 6s; animation-delay:5s, 0s;"></span>
+      <span style="left:93%; animation-duration:17s, 5s; animation-delay:12s, 2s;"></span>
+      <span style="left:98%; animation-duration:15s, 6s; animation-delay:6s, 1s;"></span>
     </div>
 
-    <a href="#details" class="scroll-cue" aria-label="Scroll to event details">
-      <span class="scroll-cue-line" aria-hidden="true"></span>
-      <span class="scroll-cue-label">Scroll</span>
-    </a>
+    <!-- embroidered (zardozi / gota) frame with floral corners, toran and side vines -->
+    <div class="hero-frame" aria-hidden="true">
+      <div class="frame-rule"></div>
+      <svg class="toran" width="100%" height="70"><rect width="100%" height="70" fill="url(#toran)"/></svg>
+      <svg class="vine vine-left" width="44" height="100%"><rect width="44" height="100%" fill="url(#vine)"/></svg>
+      <svg class="vine vine-right" width="44" height="100%"><rect width="44" height="100%" fill="url(#vine)"/></svg>
+      <svg class="frame-corner corner-tl"><use href="#corner"/></svg>
+      <svg class="frame-corner corner-tr"><use href="#corner"/></svg>
+      <svg class="frame-corner corner-bl"><use href="#corner"/></svg>
+      <svg class="frame-corner corner-br"><use href="#corner"/></svg>
+    </div>
+
+    <div class="hero-content">
+      <p class="bismillah reveal" lang="ar" dir="rtl">بِسْمِ ٱللَّٰهِ ٱلرَّحْمَٰنِ ٱلرَّحِيمِ</p>
+      <p class="eyebrow reveal stagger-1">Mr &amp; Mrs Syed Rashed Jilani</p>
+      <p class="hero-line reveal stagger-1">invite you to the</p>
+      <h2 class="script-title reveal stagger-2">Walima</h2>
+      <p class="hero-line reveal stagger-2">of their beloved son</p>
+      <div class="names reveal stagger-3">
+        <span class="name">Syed Muhammad Taha Jilani</span>
+        <span class="with">with</span>
+        <span class="name name-alt">Syeda Noor Fatima Gillani</span>
+      </div>
+      <div class="divider reveal stagger-4" aria-hidden="true"><svg class="divider-svg" viewBox="0 0 300 40"><g fill="none" stroke="currentColor" stroke-width="1"><line x1="0" y1="22" x2="104" y2="22"/><line x1="196" y1="22" x2="300" y2="22"/></g><use href="#rose" x="96" y="14" width="16" height="16"/><use href="#rose" x="188" y="14" width="16" height="16"/><use href="#gul" x="130" y="0" width="40" height="40"/></svg></div>
+      <p class="hero-date reveal stagger-4">Sunday &middot; 29<sup>th</sup> November 2026 &middot; Lahore</p>
+    </div>
+
   </section>
 
   <!-- ============ DATE & DETAILS ============ -->
   <section id="details" class="section details">
-    <div class="section-inner reveal">
-      <p class="eyebrow eyebrow-dark">Event Details</p>
-      <h2 class="section-title">Date &amp; Time</h2>
-      <div class="divider divider-dark" aria-hidden="true"><svg class="divider-svg" viewBox="0 0 300 20" aria-hidden="true"><g fill="none" stroke="currentColor" stroke-width="1.1"><line x1="0" y1="10" x2="123" y2="10"/><line x1="177" y1="10" x2="300" y2="10"/><circle cx="133" cy="10" r="2" fill="currentColor" stroke="none"/><circle cx="167" cy="10" r="2" fill="currentColor" stroke="none"/><path d="M150,2 L158,10 L150,18 L142,10 Z" fill="currentColor" stroke="none"/></g></svg></div>
+    <svg class="section-flower sf-tl" viewBox="0 0 170 170" aria-hidden="true"><use href="#cluster"/></svg>
+    <svg class="section-flower sf-tr" viewBox="0 0 170 170" aria-hidden="true"><use href="#cluster"/></svg>
+    <svg class="section-flower sf-bl" viewBox="0 0 170 170" aria-hidden="true"><use href="#cluster"/></svg>
+    <svg class="section-flower sf-br" viewBox="0 0 170 170" aria-hidden="true"><use href="#cluster"/></svg>
 
-      <div class="detail-date">
+    <div class="section-inner">
+      <p class="eyebrow eyebrow-dark reveal">Event Details</p>
+      <h2 class="section-title reveal stagger-1">Date &amp; Time</h2>
+      <div class="divider divider-dark reveal stagger-1" aria-hidden="true"><svg class="divider-svg" viewBox="0 0 300 40"><g fill="none" stroke="currentColor" stroke-width="1"><line x1="0" y1="22" x2="104" y2="22"/><line x1="196" y1="22" x2="300" y2="22"/></g><use href="#rose" x="96" y="14" width="16" height="16"/><use href="#rose" x="188" y="14" width="16" height="16"/><use href="#gul" x="130" y="0" width="40" height="40"/></svg></div>
+
+      <div class="detail-date reveal stagger-2">
         <span class="detail-day">Sunday</span>
         <span class="detail-full">29<sup>th</sup> November 2026</span>
       </div>
 
-      <div class="detail-rows">
-        <div class="detail-row">
-          <span class="detail-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4"><path d="M7 2v7a1.5 1.5 0 0 0 3 0V2M8.5 9v13M16 2c-1.6 0-2.5 1.3-2.5 4v4c0 1.2.8 2 2.5 2m0-10v16"/></svg></span>
-          <div class="detail-text">
-            <span class="detail-label">Lunch</span>
-            <span class="detail-value">2:00 PM</span>
-          </div>
+      <div class="detail-cards reveal stagger-3">
+        <div class="detail-card">
+          <span class="detail-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3.2 2"/></svg></span>
+          <span class="detail-label">Arrival</span>
+          <span class="detail-value">2:00 PM</span>
         </div>
-        <div class="detail-row">
-          <span class="detail-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4"><path d="M2.5 17h19M4.5 17c0-5.2 3.4-8.5 7.5-8.5s7.5 3.3 7.5 8.5M10.3 4.5h3.4M12 8.5V4.3"/></svg></span>
-          <div class="detail-text">
-            <span class="detail-label">Walima</span>
-            <span class="detail-value">3:00 PM onwards</span>
-          </div>
+        <div class="detail-card">
+          <span class="detail-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M7 2v7a1.5 1.5 0 0 0 3 0V2M8.5 9v13M16 2c-1.6 0-2.5 1.3-2.5 4v4c0 1.2.8 2 2.5 2m0-10v16"/></svg></span>
+          <span class="detail-label">Lunch</span>
+          <span class="detail-value">3:00 PM</span>
         </div>
       </div>
 
-      <div class="countdown" id="countdown" aria-live="polite">
+      <div class="countdown reveal stagger-4" id="countdown" aria-live="polite">
         <div class="countdown-item"><span class="countdown-num" id="cd-days">00</span><span class="countdown-label">Days</span></div>
         <div class="countdown-item"><span class="countdown-num" id="cd-hours">00</span><span class="countdown-label">Hours</span></div>
         <div class="countdown-item"><span class="countdown-num" id="cd-mins">00</span><span class="countdown-label">Minutes</span></div>
@@ -117,36 +428,37 @@
 
   <!-- ============ VENUE & LOCATION ============ -->
   <section id="venue" class="section venue">
-    <div class="ornament corner corner-tl light" aria-hidden="true"><svg class="corner-svg" viewBox="0 0 120 120" aria-hidden="true"><g fill="none" stroke="currentColor" stroke-width="1.4"><path d="M4,4 C4,42 20,62 60,62"/><path d="M4,4 C42,4 62,20 62,60"/><path d="M11,11 Q32,15 36,36 Q40,57 60,60" opacity="0.8"/><path d="M18,18 C25,13 32,16 31,23 C30,29 21,31 17,25 C15,22 16,19 18,18 Z" fill="currentColor" stroke="none" opacity="0.9"/><path d="M36,10 C43,7 48,11 46,17 C44,23 36,21 34,16 C33,13 34,11 36,10 Z" fill="currentColor" stroke="none" opacity="0.75"/><path d="M52,46 C61,39 64,50 57,57 C50,64 43,57 46,50 C47,47 49,45 52,46 Z" fill="currentColor" stroke="none" opacity="0.85"/><circle cx="8" cy="8" r="2.2" fill="currentColor" stroke="none"/><circle cx="60" cy="60" r="1.6" fill="currentColor" stroke="none"/></g></svg></div>
-    <div class="ornament corner corner-br light" aria-hidden="true"><svg class="corner-svg" viewBox="0 0 120 120" aria-hidden="true"><g fill="none" stroke="currentColor" stroke-width="1.4"><path d="M4,4 C4,42 20,62 60,62"/><path d="M4,4 C42,4 62,20 62,60"/><path d="M11,11 Q32,15 36,36 Q40,57 60,60" opacity="0.8"/><path d="M18,18 C25,13 32,16 31,23 C30,29 21,31 17,25 C15,22 16,19 18,18 Z" fill="currentColor" stroke="none" opacity="0.9"/><path d="M36,10 C43,7 48,11 46,17 C44,23 36,21 34,16 C33,13 34,11 36,10 Z" fill="currentColor" stroke="none" opacity="0.75"/><path d="M52,46 C61,39 64,50 57,57 C50,64 43,57 46,50 C47,47 49,45 52,46 Z" fill="currentColor" stroke="none" opacity="0.85"/><circle cx="8" cy="8" r="2.2" fill="currentColor" stroke="none"/><circle cx="60" cy="60" r="1.6" fill="currentColor" stroke="none"/></g></svg></div>
+    <svg class="section-flower sf-tl" viewBox="0 0 170 170" aria-hidden="true"><use href="#cluster"/></svg>
+    <svg class="section-flower sf-tr" viewBox="0 0 170 170" aria-hidden="true"><use href="#cluster"/></svg>
+    <svg class="section-flower sf-bl" viewBox="0 0 170 170" aria-hidden="true"><use href="#cluster"/></svg>
+    <svg class="section-flower sf-br" viewBox="0 0 170 170" aria-hidden="true"><use href="#cluster"/></svg>
 
-    <div class="section-inner reveal">
-      <p class="eyebrow">Venue</p>
-      <h2 class="section-title light">Shershah Palace</h2>
-      <div class="divider" aria-hidden="true"><svg class="divider-svg" viewBox="0 0 300 20" aria-hidden="true"><g fill="none" stroke="currentColor" stroke-width="1.1"><line x1="0" y1="10" x2="123" y2="10"/><line x1="177" y1="10" x2="300" y2="10"/><circle cx="133" cy="10" r="2" fill="currentColor" stroke="none"/><circle cx="167" cy="10" r="2" fill="currentColor" stroke="none"/><path d="M150,2 L158,10 L150,18 L142,10 Z" fill="currentColor" stroke="none"/></g></svg></div>
-      <p class="venue-address">Adda Plot, Raiwind Road, Eden Park,<br>Lahore, 54000, Pakistan</p>
+    <div class="section-inner">
+      <p class="eyebrow reveal">Venue</p>
+      <h2 class="section-title reveal stagger-1">Shershah Palace</h2>
+      <div class="divider reveal stagger-1" aria-hidden="true"><svg class="divider-svg" viewBox="0 0 300 40"><g fill="none" stroke="currentColor" stroke-width="1"><line x1="0" y1="22" x2="104" y2="22"/><line x1="196" y1="22" x2="300" y2="22"/></g><use href="#rose" x="96" y="14" width="16" height="16"/><use href="#rose" x="188" y="14" width="16" height="16"/><use href="#gul" x="130" y="0" width="40" height="40"/></svg></div>
+      <p class="venue-address reveal stagger-2">Adda Plot, Raiwind Road, Eden Park,<br>Lahore, 54000, Pakistan</p>
 
-      <div class="map-frame">
-        <iframe
-          src="https://www.google.com/maps?q=Shershah+Palace,+Adda+Plot+Raiwind+Rd,+Eden+Park,+Lahore,+54000&output=embed"
-          width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"
-          referrerpolicy="no-referrer-when-downgrade"
-          title="Map to Shershah Palace, Lahore">
-        </iframe>
+      <div class="map-frame reveal stagger-3">
+        <div class="map-inner">
+          <iframe
+            src="https://www.google.com/maps?q=Shershah+Palace,+Adda+Plot+Raiwind+Rd,+Eden+Park,+Lahore,+54000&output=embed"
+            width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+            title="Map to Shershah Palace, Lahore">
+          </iframe>
+        </div>
       </div>
 
-      <a class="directions-btn" href="https://share.google/zfR05Xhf2EPPh2N76" target="_blank" rel="noopener noreferrer">
-        Get Directions
-      </a>
+      <div class="reveal stagger-4">
+        <a class="directions-btn" href="https://share.google/zfR05Xhf2EPPh2N76" target="_blank" rel="noopener noreferrer">
+          Get Directions
+        </a>
+      </div>
     </div>
   </section>
 
 </main>
-
-<footer class="site-footer">
-  <div class="divider divider-dark" aria-hidden="true"><svg class="divider-svg" viewBox="0 0 300 20" aria-hidden="true"><g fill="none" stroke="currentColor" stroke-width="1.1"><line x1="0" y1="10" x2="123" y2="10"/><line x1="177" y1="10" x2="300" y2="10"/><circle cx="133" cy="10" r="2" fill="currentColor" stroke="none"/><circle cx="167" cy="10" r="2" fill="currentColor" stroke="none"/><path d="M150,2 L158,10 L150,18 L142,10 Z" fill="currentColor" stroke="none"/></g></svg></div>
-  <p>With love &mdash; the Jilani &amp; Gilani families</p>
-</footer>
 
 <script src="assets/js/main.js"></script>
 </body>
