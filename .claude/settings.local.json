@@ -1,0 +1,13 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(npm ls *)",
+      "Bash(npx --yes playwright --version)",
+      "Bash(node scripts/verify_site.js)",
+      "Bash(npm root *)",
+      "Bash(NODE_PATH=\"C:\\\\Users\\\\tahajilani\\\\AppData\\\\Roaming\\\\npm\\\\node_modules\" node scripts/verify_site.js)",
+      "PowerShell(npx --yes @superdesign/cli@latest)",
+      "PowerShell(npx --yes @superdesign/cli@latest login)"
+    ]
+  }
+}
