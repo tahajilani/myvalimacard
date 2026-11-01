@@ -1,6 +1,6 @@
 /* ===== Design tokens ===== */
 :root {
-  color-scheme: only light;
+  color-scheme: light dark;
   /* beige paper */
   --beige-100: #f6efe3;
   --beige-200: #efe4d2;
@@ -51,7 +51,7 @@
 
 * { margin: 0; padding: 0; box-sizing: border-box; }
 
-html { scroll-behavior: smooth; -webkit-text-size-adjust: 100%; }
+html { scroll-behavior: smooth; background: var(--beige-100); -webkit-text-size-adjust: 100%; }
 
 body {
   font-family: var(--font-body);
@@ -773,4 +773,12 @@ a { color: inherit; text-decoration: none; }
   .with { font-size: 3rem; }
   .hero-date { font-size: 1.4rem; }
   .divider { width: 320px; }
+}
+
+/* The invitation keeps its light design in dark mode. Declaring our own dark
+   scheme stops Chrome / Samsung Internet from auto-inverting the page into
+   brown with white text; the colours below simply repeat the light ones. */
+@media (prefers-color-scheme: dark) {
+  :root { color-scheme: dark; }
+  html, body { background: var(--beige-100); color: var(--ink); }
 }
