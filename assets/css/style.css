@@ -1,5 +1,6 @@
 /* ===== Design tokens ===== */
 :root {
+  color-scheme: only light;
   /* beige paper */
   --beige-100: #f6efe3;
   --beige-200: #efe4d2;
