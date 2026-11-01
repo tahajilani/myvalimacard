@@ -113,7 +113,7 @@ def build_og_image():
     centered_text(draw, cx, 470, "SUNDAY, 29TH NOVEMBER 2026 · LAHORE", date_f, GOLD_300 if False else GOLD_400, letter_spacing=2)
 
     venue_f = font(SERIF_FONT, 22)
-    centered_text(draw, cx, 520, "Shershah Palace · 2:00 PM Arrival · 3:00 PM Lunch", venue_f, IVORY)
+    centered_text(draw, cx, 520, "Shershah Palace · 1:30 PM Arrival · 2:30 PM Lunch", venue_f, IVORY)
 
     img.save(os.path.join(OUT_DIR, "og-image.png"), "PNG")
     print("Saved og-image.png")

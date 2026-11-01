@@ -2,7 +2,7 @@
   'use strict';
 
   /* ---- Countdown ---- */
-  var EVENT_DATE = new Date('2026-11-29T15:00:00+05:00').getTime();
+  var EVENT_DATE = new Date('2026-11-29T13:30:00+05:00').getTime();
   var els = {
     days: document.getElementById('cd-days'),
     hours: document.getElementById('cd-hours'),
