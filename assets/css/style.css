@@ -206,7 +206,7 @@ a { color: inherit; text-decoration: none; }
   margin-bottom: 0.9rem;
 }
 
-.hero .eyebrow { font-size: clamp(0.96rem, 4.08vw, 1.26rem); font-weight: 600; letter-spacing: 0.1em; color: var(--sage-900); }
+.hero .eyebrow { font-size: clamp(0.9rem, 3.84vw, 1.18rem); font-weight: 600; letter-spacing: 0.1em; color: var(--sage-900); }
 
 .hero-line {
   font-size: clamp(0.98rem, 4.3vw, 1.25rem);
@@ -247,7 +247,7 @@ a { color: inherit; text-decoration: none; }
 }
 .name {
   font-family: var(--font-display);
-  font-weight: 500;
+  font-weight: 600;
   font-size: clamp(1.05rem, 5.8vw, 2rem);
   letter-spacing: 0.01em;
   white-space: nowrap;
@@ -259,6 +259,18 @@ a { color: inherit; text-decoration: none; }
   animation: shimmer 3s ease-in-out infinite alternate;
 }
 .name-alt { animation-direction: alternate-reverse; }
+/* bride's parents: a step below the hosts' line at the top of the card */
+.names .name-parents { margin: 0.2rem 0 0; }
+.name-parents span {
+  display: block;
+  font-family: var(--font-display);
+  font-size: 0.84em;
+  font-style: normal;
+  font-weight: 400;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  white-space: nowrap;
+}
 .with {
   font-family: var(--font-script);
   font-size: clamp(1.7rem, 7vw, 2.7rem);
@@ -725,7 +737,7 @@ a { color: inherit; text-decoration: none; }
   /* landscape screens: size the first page by height so it fits above the fold */
   .hero-content { padding-block: clamp(2.6rem, 7vh, 4.5rem) clamp(3.4rem, 8vh, 5rem); }
   .bismillah { font-size: clamp(1.5rem, 4.2vh, 2.7rem); margin-bottom: 0.5rem; }
-  .hero .eyebrow { font-size: clamp(1.02rem, 2.28vh, 1.32rem); letter-spacing: 0.18em; }
+  .hero .eyebrow { font-size: clamp(0.96rem, 2.14vh, 1.24rem); letter-spacing: 0.18em; }
   .hero-line { font-size: clamp(0.95rem, 2.1vh, 1.25rem); margin-bottom: 0.3rem; }
   .script-title { font-size: clamp(3rem, 9.5vh, 6rem); }
   .name { font-size: clamp(1.3rem, 3.5vh, 2rem); }
@@ -766,7 +778,7 @@ a { color: inherit; text-decoration: none; }
   .section-inner { max-width: 700px; }
   .hero-content { max-width: 860px; }
   .bismillah { font-size: clamp(2.7rem, 4.6vh, 3.4rem); }
-  .hero .eyebrow { font-size: 1.44rem; }
+  .hero .eyebrow { font-size: 1.35rem; }
   .hero-line { font-size: 1.4rem; }
   .script-title { font-size: clamp(6rem, 11vh, 7.5rem); }
   .name { font-size: clamp(2rem, 3.8vh, 2.6rem); }
@@ -783,5 +795,6 @@ a { color: inherit; text-decoration: none; }
   html, body { background: var(--beige-100); color: var(--ink); }
 }
 @media (max-width: 340px) {
-  .hero .eyebrow { font-size: 0.86rem; letter-spacing: 0.06em; }
+  .hero .eyebrow { font-size: 0.81rem; letter-spacing: 0.06em; }
+  .name-parents span { font-size: 0.76em; letter-spacing: 0.08em; }
 }
