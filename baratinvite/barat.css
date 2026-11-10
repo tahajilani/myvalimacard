@@ -39,6 +39,17 @@
 .door-left  { box-shadow: inset -1px 0 0 rgba(176,141,74,0.9), inset -8px 0 18px -10px rgba(122,24,32,0.35); }
 .door-right { box-shadow: inset 1px 0 0 rgba(176,141,74,0.9), inset 8px 0 18px -10px rgba(122,24,32,0.35); }
 
+/* three time cards side by side, even on small phones */
+.detail-cards-3 { flex-wrap: nowrap; gap: clamp(0.45rem, 2.4vw, 1.5rem); }
+.detail-cards-3 .detail-card {
+  flex: 1 1 0;
+  min-width: 0;
+  max-width: 160px;
+  padding: clamp(0.9rem, 3.4vw, 1.5rem) clamp(0.3rem, 1.6vw, 1rem);
+}
+.detail-cards-3 .detail-label { letter-spacing: 0.14em; font-size: clamp(0.58rem, 2.5vw, 0.7rem); }
+.detail-cards-3 .detail-value { font-size: clamp(1rem, 4.3vw, 1.2rem); white-space: nowrap; }
+
 @media (prefers-color-scheme: dark) {
   html, body { background: var(--beige-100); color: var(--ink); }
 }
