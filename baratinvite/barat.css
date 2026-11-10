@@ -1,0 +1,44 @@
+/* ===== Barat theme: deep red + antique gold on ivory =====
+   Loaded after ../assets/css/style.css. The shared stylesheet calls its
+   accent colour "sage"; here those tokens are remapped to reds. */
+:root {
+  /* warm ivory paper */
+  --beige-100: #f7ede6;
+  --beige-200: #f0dfd4;
+  --beige-300: #e6cbbb;
+  --beige-400: #d9b39e;
+  /* deep reds (replace sage) */
+  --sage-900: #5e1219;
+  --sage-800: #7a1820;
+  --sage-700: #96232b;
+  --sage-600: #b03a40;
+  --sage-300: #ebbdb6;
+  /* red roses */
+  --rose-500: #a71d2a;
+  --rose-400: #cc3f46;
+  --rose-300: #eba29f;
+  --ink: #4a0f15;
+
+  /* leaves stay green so the roses read as roses */
+  --leaf: #6f7b4e;
+}
+
+/* details section leaves on the dark red background */
+.divider-dark,
+.details .section-flower { --leaf: #a9b183; }
+.medallion-flowers { --leaf: #6f7b4e; }
+.petals span:nth-child(5n) { background: linear-gradient(135deg, var(--gold-300), var(--gold-500)); }
+
+/* hard-coded sage tints in the shared stylesheet, re-tinted red */
+.hero-line { color: rgba(94,18,25,0.88); }
+.venue-address { color: rgba(94,18,25,0.85); }
+.map-frame { box-shadow: 0 14px 36px rgba(122,24,32,0.22); }
+.directions-btn { box-shadow: 0 6px 20px rgba(94,18,25,0.3); }
+.directions-btn:hover { box-shadow: 0 10px 28px rgba(94,18,25,0.4); }
+.medallion { filter: drop-shadow(0 12px 26px rgba(94,18,25,0.3)); }
+.door-left  { box-shadow: inset -1px 0 0 rgba(176,141,74,0.9), inset -8px 0 18px -10px rgba(122,24,32,0.35); }
+.door-right { box-shadow: inset 1px 0 0 rgba(176,141,74,0.9), inset 8px 0 18px -10px rgba(122,24,32,0.35); }
+
+@media (prefers-color-scheme: dark) {
+  html, body { background: var(--beige-100); color: var(--ink); }
+}

@@ -2,14 +2,17 @@
   'use strict';
 
   /* ---- Countdown ---- */
-  var EVENT_DATE = new Date('2026-11-29T13:00:00+05:00').getTime();
+  var countdownEl = document.getElementById('countdown');
+  // each card can set its own target with data-event on #countdown
+  var EVENT_DATE = new Date(
+    (countdownEl && countdownEl.getAttribute('data-event')) || '2026-11-29T13:00:00+05:00'
+  ).getTime();
   var els = {
     days: document.getElementById('cd-days'),
     hours: document.getElementById('cd-hours'),
     mins: document.getElementById('cd-mins'),
     secs: document.getElementById('cd-secs')
   };
-  var countdownEl = document.getElementById('countdown');
 
   function pad(n) { return String(n).padStart(2, '0'); }
 
